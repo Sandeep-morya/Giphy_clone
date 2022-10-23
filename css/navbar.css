@@ -1,0 +1,134 @@
+.p1{fill:var(--marien)}
+.p2{fill:var(--purple)}
+.p3{fill:var(--aqua)}
+.p4{fill:var(--yellow)}
+.p5{fill:var(--salmon)}
+.p6{fill:var(--grey)}
+.p7{fill:var(--white)}
+
+.c1:hover{background:var(--l1)}
+.c2:hover{background:var(--l2)}
+.c3:hover{background:var(--l3)}
+.c4:hover{background:var(--l4)}
+.c5:hover{background:var(--l5)}
+.c6:hover{background:var(--l6)}
+
+.e1{background:var(--l1)}
+.e2{background:var(--l2)}
+.e3{background:var(--l3)}
+.e4{background:var(--l4)}
+.e5{background:var(--l5)}
+.e6{background:var(--l6)}
+
+.navbar{
+    position: relative;
+    top:15px;
+}
+.logo{
+    position: absolute;
+}
+.btns{
+    position: absolute;
+    top:3%;
+    left:18%;
+    width: 44%;
+    display: flex;
+    justify-content: space-between;
+}
+.btns:hover .emp{
+    box-shadow: 0 -1px 5px 0 var(--grey);
+}
+.label{
+    padding:2px 12px;
+    line-height: 27px;
+}
+.emp{
+    width: 100%;
+    height: 4px
+}
+.btns2{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    right: 21%;
+    top:3%;
+    width: 16%;
+}
+.btns2>div{
+    padding: 8px 18px;
+    border-radius: 0.2rem;
+    font-size: 13px;
+}
+.create{background: #8B3CFF;}
+.upload{background: #734CFF;}
+.log{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    top:3%;
+    right: 0%;
+    width: 18%;
+    height: 38px;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    background: #3e3e3e;
+}
+
+.log img{
+    width: 37px;
+    margin-top: 5px;
+    border-radius: 0.2rem;
+}
+.fa-angle-up{
+    display: none !important;
+}
+.fa-angle-down{
+    display: none;
+}
+.user_info{
+    display: flex;
+}
+.angle{
+    margin:0 12px;
+    border: 1px solid red;
+}
+.angle i{
+    font-size: 20px !important;
+    font-weight: bolder !important;
+}
+.user_name, .user_info i{
+    font-size: 16px;
+}
+.list{
+    position: absolute;
+    top:100%;
+    right: 2%;
+    top:9vh;
+    display: flex;
+    flex-direction: column;
+    width: 14vw;
+    border-radius: 0.2rem;
+    background: #252525;
+}
+.list span{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color:rgba(255, 255, 255, 0.432);
+    font-weight: 100 !important;
+}
+.list span:hover{
+    color:white;
+}
+.list span:nth-child(1){
+    padding-top: 10px;
+}
+.list span:nth-child(2){
+    border-bottom: 1px solid rgba(128, 128, 128, 0.322);
+}
+.list span:nth-child(3){
+    padding-top: 5px;
+}
+.list{
+    display: none;
+}

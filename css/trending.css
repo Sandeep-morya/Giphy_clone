@@ -1,0 +1,80 @@
+.trends{
+    width: 100%;
+    position: absolute;
+    top:40%;
+    font-family: Arial !important;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.heading{
+    display: flex;
+    align-items: center;
+}
+.heading h1{
+    font-size: 22px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.tag{
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 0.521);
+}
+.tag i{
+    font-size: 16px !important;
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 0.521);
+}
+.items{
+    margin-top: -12px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 600vh;
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    width: 250px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    margin: 5px;
+}
+.image_box{
+    width: 100%;
+}
+.image_box img{
+    width: 105%;
+}
+.icons{
+    visibility: hidden;
+    width: 25%;
+    right: 10%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top:10px;
+}
+.icons i{
+    font-size: 16px !important;
+}
+.icons i:hover{
+    font-size: 18px !important;
+}
+.card:hover>.icons,.card:hover>.creator{
+    visibility: visible;
+}
+.creator{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top:85%;
+    height: 25px;
+    font-size: 12px !important;
+    text-align:center;
+    filter: drop-shadow(0 2px 5px black);
+}
