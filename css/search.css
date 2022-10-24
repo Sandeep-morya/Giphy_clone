@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top:11vh;
+    top:70px;
     overflow: hidden;
 }
 .search_bar{
@@ -50,6 +50,6 @@
 
 .stories>img{
     position: absolute;
-    top:22%;
+    top:140px;
     width: 100%;
 }

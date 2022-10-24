@@ -57,8 +57,6 @@ export const navbar=`<div class="logo">
   <div class="user_info">
     <span class="user_name">Sandeep1322</span>
     <div class="angle">
-      <i class="fa-sharp fa-solid fa-angle-up"></i>
-    <i class="fa-sharp fa-solid fa-angle-down"></i>
     </div>
   </div>
 </div>
@@ -69,3 +67,6 @@ export const navbar=`<div class="logo">
 <span>Settings</span>
 <span>Logout</span>
 </div>`
+
+export let down_angle=`<i class="fa-sharp fa-solid fa-angle-down"></i>`;
+export let up_angle='<i class="fa-sharp fa-solid fa-angle-up"></i>';

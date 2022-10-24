@@ -1,7 +1,7 @@
 .trends{
     width: 100%;
     position: absolute;
-    top:40%;
+    top:340px;
     font-family: Arial !important;
 }
 .header{
@@ -13,12 +13,8 @@
     display: flex;
     align-items: center;
 }
-.heading h1{
-    font-size: 22px;
-    margin-left: 10px;
-    letter-spacing: 1px;
-}
-.tag{
+
+.tag span{
     font-size: 14px !important;
     color: rgba(255, 255, 255, 0.521);
 }
@@ -28,11 +24,10 @@
     color: rgba(255, 255, 255, 0.521);
 }
 .items{
-    margin-top: -12px;
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    height: 600vh;
+    height: 610vh;
     flex-wrap: wrap;
 }
 .card{
@@ -77,4 +72,10 @@
     font-size: 12px !important;
     text-align:center;
     filter: drop-shadow(0 2px 5px black);
+}
+.query{
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-left: 10px;
+    letter-spacing: 1px;
 }
