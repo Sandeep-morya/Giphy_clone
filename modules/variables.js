@@ -1,4 +1,4 @@
-export const navbar=`<div class="logo">
+export let navbar=`<div class="logo">
 <svg
   class="Q6bcqX28de_6uGB2vxNet"
   xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export const navbar=`<div class="logo">
   <div class="emp e5 c5"></div>
 </div>
 <div class="btn c6">
-  <div style="font-size: 25px;" class="label"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <div class="label"><i class="fa-solid fa-ellipsis-vertical"></i></div>
   <div class="emp e6 c6"></div>
 </div>
 </div>
@@ -67,6 +67,10 @@ export const navbar=`<div class="logo">
 <span>Settings</span>
 <span>Logout</span>
 </div>`
-
+export let search=`<input type="text" name="" class="search_bar" placeholder="Search All the GIFs & Stickers">
+<div class="search_btn"><img src="https://giphy.com/static/img/search-icon.svg" alt="">
+</div>`;
 export let down_angle=`<i class="fa-sharp fa-solid fa-angle-down"></i>`;
 export let up_angle='<i class="fa-sharp fa-solid fa-angle-up"></i>';
+export let id=localStorage.getItem('id');
+export let keys=JSON.parse(localStorage.getItem('keys'));

@@ -1,0 +1,71 @@
+.cat_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:350px;
+    visibility: hidden;
+}
+
+.cat_list_div{
+    width: 22%;
+}
+.cat_list_div h2{
+    font-size: 14px !important;
+    text-transform: uppercase;
+}
+.cat_list p{
+    font-weight: normal !important;
+    cursor: pointer;
+}
+.cat_list p:hover{
+    color: var(--aqua);
+}
+.cat_items_div{
+    margin-top: -40px;
+    width: 75%;
+}
+.cat_items_div h1{
+    font-size: 35px !important;
+}
+.cat_card{
+    margin-top: -20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+.cat_card img{
+    width: 240px;
+    height: 120px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+.c_card{
+    position: relative;
+}
+.c_card span{
+    position: absolute;
+    top:0;
+    left: 10%;
+    right: 10%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 16px  !important;
+    text-transform: uppercase;
+}
+.cat_btns{
+    position: absolute;
+    display: flex;
+    right: 0;
+}
+.cat_btns button{
+    background-color: var(--dimmed);
+    padding:5px 15px ;
+    border-radius: 2rem;
+    border:none;
+    margin:5px;
+}
+.cat_btns button:active{
+    outline: 1px solid var(--white);
+}

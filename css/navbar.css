@@ -30,8 +30,8 @@
 .btns{
     position: absolute;
     top:3%;
-    left:18%;
-    width: 44%;
+    left:17%;
+    width: 46%;
     display: flex;
     justify-content: space-between;
 }
@@ -46,11 +46,14 @@
     width: 100%;
     height: 4px
 }
+.fa-ellipsis-vertical{
+    font-size: 20px !important;
+}
 .btns2{
     position: absolute;
     display: flex;
     justify-content: space-between;
-    right: 21%;
+    right: 20%;
     top:3%;
     width: 16%;
 }
@@ -69,12 +72,14 @@
     top:3%;
     right: 0%;
     width: 18%;
-    height: 38px;
+    height: 35px;
     border-radius: 0.2rem;
     overflow: hidden;
     background: #3e3e3e;
 }
-
+.log *{
+    font-size: 14px !important;
+}
 .log img{
     width: 37px;
     margin-top: 5px;
@@ -111,7 +116,7 @@
     padding-left: 20px;
     padding-bottom: 10px;
     color:rgba(255, 255, 255, 0.432);
-    font-weight: 100 !important;
+    font-family: Arial !important;
 }
 .list span:hover{
     color:white;
@@ -123,6 +128,6 @@
     border-bottom: 1px solid rgba(128, 128, 128, 0.322);
 }
 .list span:nth-child(3){
-    padding-top: 5px;
+    padding-top: 10px;
 }
 

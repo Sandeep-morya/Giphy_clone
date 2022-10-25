@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap');
+@font-face {
+    font-family: 'Nexa';
+    src: url(../assets/Nexa_black.ttf);
+}
 
 :root{
+    --bg:#111;
+    --dimmed:rgba(255, 253, 253, 0.4);
     --white: white;
     --yellow: #FFF35C;
     --marien: #00FF99;
@@ -17,12 +22,14 @@
 }
 *{
     color: var(--white);
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: bold;
+    font-family: 'Nexa', sans-serif;
     font-size: 13px;
 }
+
+i{cursor: pointer;}
+
 body{
-    background-color: #111;
+    background-color: var(--bg);
 }
 #main{
     width: 79%;
