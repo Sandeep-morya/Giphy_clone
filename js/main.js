@@ -28,10 +28,10 @@ let category_btn = document.querySelector(".category_btn");
 let cat_list = document.querySelector(".cat_list");
 let cat_card = document.querySelector(".cat_card");
 let random_btn = document.querySelector(".random_btn");
-let translate_btn=document.querySelector('.translate_btn');
-let gifs_btn=document.querySelector('.gifs_btn');
-let asc_btn=document.querySelector('.asc');
-let dsc_btn=document.querySelector('.dsc');
+let translate_btn = document.querySelector(".translate_btn");
+let gifs_btn = document.querySelector(".gifs_btn");
+let asc_btn = document.querySelector(".asc");
+let dsc_btn = document.querySelector(".dsc");
 
 angle.innerHTML = down_angle;
 angle.addEventListener("click", () => {
@@ -51,10 +51,9 @@ query.textContent = "trending";
 
 logo.addEventListener("click", () => homepage());
 
-
 //---> Main function
 const appendHome = (array) => {
-  let keys=[];
+  let keys = [];
   trends.style = "";
   cat_div.style.display = "none";
   items.innerHTML = null;
@@ -92,8 +91,8 @@ const appendHome = (array) => {
     card.append(image_box, icons, creator);
     items.append(card);
   });
-  
-      localStorage.setItem('keys',JSON.stringify(keys))
+
+  localStorage.setItem("keys", JSON.stringify(keys));
 };
 let temp = search_data(url);
 temp.then((e) => appendHome(e));
@@ -143,38 +142,37 @@ home_btn.addEventListener("click", () => {
 });
 
 //---> Categories  button
-const fetch_cat=()=>{
+const fetch_cat = () => {
   let url = `https://api.giphy.com/v1/gifs/categories?api_key=EhZIr1LNpPT7Hy9tS0iDuSFsUMVkfwNj`;
   let response = search_data(url);
   response.then((e) => append_cat(e));
-}
-const manageui=()=>{
+};
+const manageui = () => {
   trends.style.display = "none";
   cat_div.style = "";
   switc_bg.style = "";
   cat_div.style.visibility = "visible";
-}
+};
 
 category_btn.addEventListener("click", () => {
   manageui();
   fetch_cat();
 });
-asc_btn.addEventListener('click',()=>{
-  asc_btn.style.background='white';
-  asc_btn.style.color="black";
-  dsc_btn.style='';
+asc_btn.addEventListener("click", () => {
+  asc_btn.style.background = "white";
+  asc_btn.style.color = "black";
+  dsc_btn.style = "";
   manageui();
   fetch_cat();
 });
-dsc_btn.addEventListener('click',()=>{
-  dsc_btn.style.background='white';
-  dsc_btn.style.color="black";
-  asc_btn.style='';
+dsc_btn.addEventListener("click", () => {
+  dsc_btn.style.background = "white";
+  dsc_btn.style.color = "black";
+  asc_btn.style = "";
   manageui();
   let url = `https://api.giphy.com/v1/gifs/categories?api_key=EhZIr1LNpPT7Hy9tS0iDuSFsUMVkfwNj`;
   let response = search_data(url);
   response.then((e) => append_cat(e.reverse()));
-
 });
 
 function append_cat(array) {
@@ -217,22 +215,16 @@ function show_random(e) {
   });
 }
 
-
 //--->Gifs button
-gifs_btn.addEventListener('click',()=>{
-  let x=search_bar.value;
-  if(x.length>3){
-    fetch_url(x,'gifs')
-  }
-})
+gifs_btn.addEventListener("click", () => {
+  let x = search_bar.value;
+  fetch_url(x, "gifs");
+});
 
 //---> Translate button
-translate_btn.addEventListener('click',()=>{
-  
-  let x=search_bar.value;
-  let url=`https://api.giphy.com/v1/gifs/translate?api_key=EhZIr1LNpPT7Hy9tS0iDuSFsUMVkfwNj&s=${x}`
-  if(x.length>3){
-    let response = search_data(url);
-    response.then((e) => show_random(e));
-  }
-})
+translate_btn.addEventListener("click", () => {
+  let x = search_bar.value;
+  let url = `https://api.giphy.com/v1/gifs/translate?api_key=EhZIr1LNpPT7Hy9tS0iDuSFsUMVkfwNj&s=${x}`;
+  let response = search_data(url);
+  response.then((e) => show_random(e));
+});
