@@ -1,42 +1,65 @@
 @font-face {
-    font-family: 'Nexa';
-    src: url(../assets/Nexa_black.ttf);
+	font-family: "Nexa";
+	src: url(../assets/Nexa_black.ttf);
 }
 
-:root{
-    --bg:#111;
-    --dimmed:rgba(255, 253, 253, 0.4);
-    --white: white;
-    --yellow: #FFF35C;
-    --marien: #00FF99;
-    --aqua: #00CCFF;
-    --purple: #9933FF;
-    --salmon: #FF6666;
-    --grey: rgba(17, 17, 17, 0.377);
-    --l1:linear-gradient(90deg,#0075fc,#00f482);
-    --l2:linear-gradient(90deg,#00f482,#00ffea);
-    --l3:linear-gradient(90deg,#00ffea,#0084ff);
-    --l4:linear-gradient(90deg,#0084ff,#6200ff);
-    --l5:linear-gradient(90deg,#6200ff,#c300ff);
-    --l6:linear-gradient(90deg,#c300ff,#ff0077);
+:root {
+	--bg: #111;
+	--dimmed: rgba(255, 253, 253, 0.4);
+	--white: white;
+	--yellow: #fff35c;
+	--marien: #00ff99;
+	--aqua: #00ccff;
+	--purple: #9933ff;
+	--salmon: #ff6666;
+	--grey: rgba(17, 17, 17, 0.377);
+	--l1: linear-gradient(90deg, #0075fc, #00f482);
+	--l2: linear-gradient(90deg, #00f482, #00ffea);
+	--l3: linear-gradient(90deg, #00ffea, #0084ff);
+	--l4: linear-gradient(90deg, #0084ff, #6200ff);
+	--l5: linear-gradient(90deg, #6200ff, #c300ff);
+	--l6: linear-gradient(90deg, #c300ff, #ff0077);
 }
-*{
-    color: var(--white);
-    font-family: 'Nexa', sans-serif;
-    font-size: 13px;
+* {
+	color: var(--white);
+	font-family: "Nexa", sans-serif;
+	font-size: 13px;
 }
 
-i{cursor: pointer;}
+i {
+	cursor: pointer;
+}
 
-body{
-    background-color: var(--bg);
+body {
+	background-color: var(--bg);
 }
-#main{
-    width: 79%;
-    margin: auto;
-    position: relative;
-    height: 100vh;
+#main {
+	width: 70%;
+	margin: auto;
+	position: relative;
 }
-svg,i{
-    cursor: pointer;
+svg,
+i {
+	cursor: pointer;
+}
+
+/* Full HD Laptops */
+@media screen and (max-width: 100rem) {
+}
+/* HD Laptops  */
+@media screen and (max-width: 88rem) {
+	#main {
+		width: 79%;
+		margin: auto;
+		position: relative;
+	}
+}
+/* Tablets */
+@media screen and (max-width: 64rem) {
+}
+/* Mobiles */
+@media screen and (max-width: 40rem) {
+	#main {
+		width: 100% !important;
+	}
 }

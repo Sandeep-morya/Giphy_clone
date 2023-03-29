@@ -1,40 +1,39 @@
-.search{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top:70px;
-    overflow: hidden;
+.search {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 70px;
+	overflow: hidden;
 }
-.search_bar{
-    width: 100%;
-    font-size: 18px !important;
-    color: black;
-    padding: 17px;
-    border-radius: 0.3rem;
-    outline: none;
-    border: none;
+.search_bar {
+	width: 100%;
+	font-size: 18px !important;
+	color: black;
+	padding: 17px;
+	border-radius: 0.3rem;
+	outline: none;
+	border: none;
 }
-.search_bar::placeholder{
-    color: var(--grey);
+.search_bar::placeholder {
+	color: var(--grey);
 }
-.search_btn{
-    position: absolute;
-    padding: 10px 15px;
-    border-radius: 0.2rem;
-    right: 0;
+.search_btn {
+	position: absolute;
+	padding: 10px 15px;
+	border-radius: 0.2rem;
+	right: 0;
 }
-.search_btn img{
-    margin-top: 2px;
+.search_btn img {
+	margin-top: 2px;
 }
 
 .search_btn {
-	background: linear-gradient(-45deg, #bd1919,#23abd5, #ff0062ea,  #2bff00);
+	background: linear-gradient(-45deg, #bd1919, #23abd5, #ff0062ea, #2bff00);
 	background-size: 400% 400%;
 	animation: gradient 15s linear infinite alternate;
 	height: 100%;
 }
-
 
 @keyframes gradient {
 	0% {
@@ -48,10 +47,28 @@
 	}
 }
 
-.random>img{
-    position: absolute;
-    top:140px;
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
+.random > img {
+	position: absolute;
+	top: 140px;
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+}
+
+/* Full HD Laptops */
+@media screen and (max-width: 100rem) {
+}
+/* HD Laptops  */
+@media screen and (max-width: 88rem) {
+}
+/* Tablets */
+@media screen and (max-width: 64rem) {
+}
+/* Mobiles */
+@media screen and (max-width: 40rem) {
+	.random > img {
+		top: 140px;
+		width: 100%;
+		height: 12rem;
+	}
 }
