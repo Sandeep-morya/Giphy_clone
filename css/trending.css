@@ -143,7 +143,7 @@
 		/* grid-template-columns: 1fr 1fr; */
 		max-width: 100%;
 		height: max-content;
-		max-height: 250vh;
+		max-height: 240vh;
 		overflow: hidden;
 		flex-wrap: wrap;
 	}
