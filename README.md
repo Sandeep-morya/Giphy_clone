@@ -1,2 +1,2 @@
 # Giphy_clone
-Link:[https://sandeepmorya.netlify.app/giphy_clone]
+[Live URL](https://giphy-clone-sage.vercel.app)
